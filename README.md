@@ -91,13 +91,16 @@ sudo dnf group install -y sound-and-video # Installs useful Sound and Video comp
 </details>
 
 <details>
-<summary>AMD</summary>No need to do this for intel integrated graphics. Mesa drivers are for AMD graphics, who lost support for h264/h245 in the fedora repositories in f38 due to legal concerns.
+<summary>AMD</summary>
+ 
+No need to do this for intel integrated graphics. Mesa drivers are for AMD graphics, who lost support for h264/h245 in the fedora repositories in f38 due to legal concerns.
  
 * If you have an AMD chipset, after installing the packages above do:
 ```
 sudo dnf install mesa-va-drivers-freeworld
 sudo dnf install mesa-va-drivers-freeworld.i686
 ```
+</details>
 
 ### OpenH264 for Firefox
 * `sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264`
